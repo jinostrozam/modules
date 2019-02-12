@@ -47,7 +47,7 @@ class webapp {
     require => Package['nginx'],
   }
 
-  file { '/usr/share/nginx/html/index.html':
+  file { '/var/www/html/index.nginx-debian.html':
     ensure  => 'file',
     group   => '0',
     mode    => '644',
